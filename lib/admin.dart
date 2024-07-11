@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class admin extends StatefulWidget {
+  const admin({super.key});
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  adminState createState() => adminState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class adminState extends State<admin> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Home Page'),
-    Text('Search Page'),
-    Text('Profile Page'),
+    Text('user'),
+    Text('category'),
+    Text('feedback'),
   ];
 
   void _onItemTapped(int index) {
@@ -49,15 +49,15 @@ class _HomeScreenState extends State<HomeScreen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'user',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.library_books),
-            label: 'Library',
+            label: 'category',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'Profile',
+            label: 'feedback',
           ),
         ],
         currentIndex: _selectedIndex,
