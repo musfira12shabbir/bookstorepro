@@ -1,7 +1,7 @@
 
 import 'dart:async';
 
-import 'package:bookstoreproject/home_screen.dart';
+import 'package:bookstoreproject/main_navbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: NavbarScreen(),
     );
   }
 }
@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState 
     Timer(
-      const Duration(milliseconds: 2000),()=>Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen(),))
+      const Duration(milliseconds: 2000),()=>Navigator.push(context, MaterialPageRoute(builder: (context) => const NavbarScreen(),))
     );
     super.initState();
   }
