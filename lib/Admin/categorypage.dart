@@ -31,6 +31,6 @@ color: Colors.grey,
 ),
     )
 
-    );
+    ));
   }
 }
